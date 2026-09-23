@@ -1,27 +1,59 @@
-<!DOCTYPE html> <!-- Tipo de documento -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8"> <!-- Caracteres especiales y acentos -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilidad -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""> <!-- Descripciòn de la pàgina -->
-    <title>Categoría 4</title> <!-- Tpitulo de la pàgina -->
-    <link rel="stylesheet" href=""> <!-- Vincula hoa de estilos -->
-</head><!--  -->
+    <meta name="description" content="Contacto con Cintia F.">
+    <title>Contacto | Cintia F</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
-<body>
-    <nav>
-        <a href="./index.html">Home</a> |
-        <a href="./registro.html">Página de registro</a> |
-        <a href="./categoria1.html">Categoría 1</a> |
-        <a href="./categoria2.html">Categoría 2</a> |
-        <a href="./categoria3.html">Categoría 3</a> |
-        <a href="./categoria4.html">Categoría 4</a> |
-    </nav>
-    <div>
-        <h3>Categoría 4</h3>
-    </div>
+<body class="category-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Cintia F">CINTIA F</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="./index.html">Home</a> |
+                <a href="./registro.html">Página de registro</a> |
+                <a href="./categoria1.html">Eventos</a> |
+                <a href="./categoria2.html">Servicios</a> |
+                <a href="./categoria3.html">Tienda</a> |
+                <a href="./categoria4.html">Contacto</a> |
+            </nav>
+        </div>
+    </header>
+
+    <main class="container category-shell">
+        <section class="category-hero contact-hero">
+            <p class="eyebrow">Contacto</p>
+            <h1>Escribime</h1>
+            <p>Si querés trabajar juntos, colaborar o conocer más sobre mis servicios, acá estoy.</p>
+        </section>
+
+        <section class="contact-box">
+            <div class="contact-info">
+                <h3>Hablemos</h3>
+                <p><strong>Email:</strong> cintiaf@divinasmusas.com</p>
+                <p><strong>Instagram:</strong> @divinasmusasblog</p>
+                <p><strong>Ubicación:</strong> Córdoba, Argentina</p>
+            </div>
+
+            <form class="auth-form contact-form">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Tu email">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..."></textarea>
+
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
