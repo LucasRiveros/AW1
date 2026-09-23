@@ -1,27 +1,87 @@
-<!DOCTYPE html> <!-- Tipo de documento -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8"> <!-- Caracteres especiales y acentos -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilidad -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""> <!-- Descripciòn de la pàgina -->
-    <title>Categoría 3</title> <!-- Tpitulo de la pàgina -->
-    <link rel="stylesheet" href=""> <!-- Vincula hoa de estilos -->
-</head><!--  -->
+    <meta name="description" content="Tienda de Cintia F.">
+    <title>Tienda | Cintia F</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
-<body>
-    <nav>
-        <a href="./index.html">Home</a> |
-        <a href="./registro.html">Página de registro</a> |
-        <a href="./categoria1.html">Categoría 1</a> |
-        <a href="./categoria2.html">Categoría 2</a> |
-        <a href="./categoria3.html">Categoría 3</a> |
-        <a href="./categoria4.html">Categoría 4</a> |
-    </nav>
-    <div>
-        <h3>Categoría 3</h3>
-    </div>
+<body class="category-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Cintia F">CINTIA F</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="./index.html">Home</a> |
+                <a href="./registro.html">Página de registro</a> |
+                <a href="./categoria1.html">Eventos</a> |
+                <a href="./categoria2.html">Servicios</a> |
+                <a href="./categoria3.html">Tienda</a> |
+                <a href="./categoria4.html">Contacto</a> |
+            </nav>
+        </div>
+    </header>
+
+    <main class="container category-shell">
+        <section class="category-hero">
+            <p class="eyebrow">Tienda</p>
+            <h1>Tienda</h1>
+            <p>Productos elegidos con mucho amor para acompañar el estilo de cada día.</p>
+        </section>
+
+        <section class="product-grid category-products">
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+                    alt="Blazer oversize blanco">
+                <div class="product-info">
+                    <h3>Blazer oversized</h3>
+                    <div class="product-meta">
+                        <span>$ 89.990</span>
+                        <button aria-label="Agregar al carrito">🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1577803947579-9f2d3e30c7d7?auto=format&fit=crop&w=900&q=80"
+                    alt="Lentes de sol">
+                <div class="product-info">
+                    <h3>Lentes de sol</h3>
+                    <div class="product-meta">
+                        <span>$ 34.990</span>
+                        <button aria-label="Agregar al carrito">🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80"
+                    alt="Cartera de cuero">
+                <div class="product-info">
+                    <h3>Cartera de cuero</h3>
+                    <div class="product-meta">
+                        <span>$ 59.990</span>
+                        <button aria-label="Agregar al carrito">🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80"
+                    alt="Aros dorados">
+                <div class="product-info">
+                    <h3>Aros dorados</h3>
+                    <div class="product-meta">
+                        <span>$ 22.990</span>
+                        <button aria-label="Agregar al carrito">🛒</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>

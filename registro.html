@@ -1,65 +1,66 @@
-<!DOCTYPE html> <!-- Tipo de documento -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8"> <!-- Caracteres especiales y acentos -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilidad -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""> <!-- Descripciòn de la pàgina -->
-    <title>Document</title> <!-- Tpitulo de la pàgina -->
-    <link rel="stylesheet" href=""> <!-- Vincula hoa de estilos -->
-</head><!--  -->
+    <meta name="description" content="Formulario de registro para Cintia.">
+    <title>Cintia | Registro</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
-<body>
-    <nav>
-        <a href="./index.html">Home</a> |
-        <a href="./registro.html">Página de registro</a> |
-        <a href="./categoria1.html">Categoría 1</a> |
-        <a href="./categoria2.html">Categoría 2</a> |
-        <a href="./categoria3.html">Categoría 3</a> |
-        <a href="./categoria4.html">Categoría 4</a> |
-    </nav>
-    <div>
-        <form action="" method="post">
-            <div>
-                <br>
-                <br>
-                <label for="txtName">
-                    <b>Nombre: </b>
-                </label>
-                <input id="txtName" name="txtName" type="text" placeholder="Ingrese su nombre" required>
-                <br>
-                <br>
-                <label for="txtApellido">
-                    <b>Apellido: </b>
-                </label>
-                <input id="txtApellido" name="txtApellido" type="text" placeholder="Ingrese su apellido" required>
-                <br>
-                <br>
-                <label for="txtEmail">
-                    <b>Email: </b>
-                </label>
-                <input id="txtEmail" name="txtEmail" type="email" placeholder="Ingrese su email" required>
-                <br>
-                <br>
-                <label for="txtPass">
-                    <b>Contraseña: </b>
-                </label>
-                <input id="txtPass" name="txtPass" type="password" placeholder="Ingrese su contraseña" required>
-                <br>
-                <br>
-                <label for="txtBirdate">
-                    <b>Fecha de nacimiento: </b>
-                </label>
-                <input id="txtBirdate" name="txtBirdate" type="date" required>
-                <br>
-                <br>
+<body class="auth-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Cintia F">CINTIA F</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="./index.html">Home</a> |
+                <a href="./registro.html">Página de registro</a> |
+                <a href="./categoria1.html">Categoría 1</a> |
+                <a href="./categoria2.html">Categoría 2</a> |
+                <a href="./categoria3.html">Categoría 3</a> |
+                <a href="./categoria4.html">Categoría 4</a> |
+            </nav>
+            <div class="nav-icons" aria-label="Acciones del usuario">
+                <span>⌕</span>
+                <span>◌</span>
             </div>
-            <div>
-                <input type="submit" value="confirmar">
-            </div>
-        </form>
-    </div>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <section class="auth-card">
+            <p class="eyebrow">REGISTRO</p>
+            <h1>Creá tu cuenta</h1>
+            <form class="auth-form">
+                <div class="form-row two-columns">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" name="apellido" type="text" placeholder="Tu apellido" required>
+                    </div>
+                </div>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tuemail@mail.com" required>
+
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" placeholder="Elegí una contraseña" required>
+
+                <label for="birthdate">Fecha de nacimiento</label>
+                <input id="birthdate" name="birthdate" type="date" required>
+
+                <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
+            </form>
+            <p class="auth-alt">
+                ¿Ya tenés una cuenta?
+                <a href="./login.html">Iniciá sesión</a>
+            </p>
+        </section>
+    </main>
 </body>
 
 </html>

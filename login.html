@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de acceso para Cintia.">
+    <title>Cintia | Login</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="auth-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Cintia F">CINTIA F</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="./index.html">Home</a> |
+                <a href="./registro.html">Página de registro</a> |
+                <a href="./categoria1.html">Categoría 1</a> |
+                <a href="./categoria2.html">Categoría 2</a> |
+                <a href="./categoria3.html">Categoría 3</a> |
+                <a href="./categoria4.html">Categoría 4</a> |
+            </nav>
+            <div class="nav-icons" aria-label="Acciones del usuario">
+                <span>⌕</span>
+                <span>◌</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <section class="auth-card">
+            <p class="eyebrow">ACCESO</p>
+            <h1>Iniciá sesión</h1>
+            <form class="auth-form">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tuemail@mail.com" required>
+
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" placeholder="Ingresá tu contraseña" required>
+
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </form>
+            <p class="auth-alt">
+                ¿Todavía no tenés cuenta?
+                <a href="./registro.html">Registrate</a>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

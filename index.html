@@ -1,27 +1,103 @@
-<!DOCTYPE html> <!-- Tipo de documento -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8"> <!-- Caracteres especiales y acentos -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilidad -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""> <!-- Descripciòn de la pàgina -->
-    <title>Document</title> <!-- Tpitulo de la pàgina -->
-    <link rel="stylesheet" href=""> <!-- Vincula hoa de estilos -->
-</head><!--  -->
+    <meta name="description" content="MVP de una tienda estilo editorial con home, cards y formularios.">
+    <title>Cintia | Home</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
 <body>
-    <nav>
-        <a href="./index.html">Home</a> |
-        <a href="./registro.html">Página de registro</a> |
-        <a href="./categoria1.html">Categoría 1</a> |
-        <a href="./categoria2.html">Categoría 2</a> |
-        <a href="./categoria3.html">Categoría 3</a> |
-        <a href="./categoria4.html">Categoría 4</a> |
-    </nav>
-    <div>
-        <h3>Home</h3>
-    </div>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Cintia F">CINTIA F</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="./index.html">Home</a> |
+                <a href="./registro.html">Página de registro</a> |
+                <a href="./categoria1.html">Eventos</a> |
+                <a href="./categoria2.html">Servicios</a> |
+                <a href="./categoria3.html">Tienda</a> |
+                <a href="./categoria4.html">Contacto</a> |
+            </nav>
+            <div class="nav-icons" aria-label="Acciones del usuario">
+                <span>⌕</span>
+                <span>◌</span>
+                <span>🛒</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero container">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+                    alt="Mujer con estilo editorial">
+            </div>
+            <div class="hero-copy">
+                <p class="eyebrow">BIENVENIDOS</p>
+                <h1>Hola, soy Cintia</h1>
+                <p>
+                    Creadora de contenido, apasionada por la moda, los viajes y las experiencias que inspiran.
+                    Este espacio comparte mi mundo: looks, eventos, recomendaciones y todo lo que me mueve.
+                </p>
+                <a href="./registro.html" class="btn btn-primary">CONOCER MÁS</a>
+            </div>
+        </section>
+
+        <section class="container category-landing">
+            <h2>Explorá mi mundo</h2>
+            <div class="category-grid">
+                <article class="landing-card">
+                    <p class="eyebrow">Eventos</p>
+                    <h3>Eventos</h3>
+                    <p>Historias, lanzamientos y momentos inolvidables que viví en primera persona.</p>
+                    <a href="./categoria1.html" class="text-link">Ver eventos</a>
+                </article>
+
+                <article class="landing-card">
+                    <p class="eyebrow">Servicios</p>
+                    <h3>Servicios</h3>
+                    <p>Asesoría de imagen, contenido y colaboraciones para marcas y personas.</p>
+                    <a href="./categoria2.html" class="text-link">Ver servicios</a>
+                </article>
+
+                <article class="landing-card">
+                    <p class="eyebrow">Tienda</p>
+                    <h3>Tienda</h3>
+                    <p>Productos favoritos y recomendaciones de estilo para llevar a tu día a día.</p>
+                    <a href="./categoria3.html" class="text-link">Ir a la tienda</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div class="footer-brand">CINTIA F</div>
+            <!-- <nav class="footer-nav" aria-label="Navegación secundaria">
+                <a href="./index.html">Home</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#tienda">Tienda</a>
+                <a href="#sobre">Sobre mi</a>
+            </nav>
+            <div class="footer-socials" aria-label="Redes sociales">
+                <span>◎</span>
+                <span>◍</span>
+                <span>◌</span>
+            </div> -->
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Cintia F. Todos los derechos reservados.</p>
+            <div>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Privacidad</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

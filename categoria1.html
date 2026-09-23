@@ -1,27 +1,69 @@
-<!DOCTYPE html> <!-- Tipo de documento -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8"> <!-- Caracteres especiales y acentos -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatibilidad -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""> <!-- Descripciòn de la pàgina -->
-    <title>Categoría 1</title> <!-- Tpitulo de la pàgina -->
-    <link rel="stylesheet" href=""> <!-- Vincula hoa de estilos -->
-</head><!--  -->
+    <meta name="description" content="Eventos y experiencias de Cintia F.">
+    <title>Eventos | Cintia F</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
-<body>
-    <nav>
-        <a href="./index.html">Home</a> |
-        <a href="./registro.html">Página de registro</a> |
-        <a href="./categoria1.html">Categoría 1</a> |
-        <a href="./categoria2.html">Categoría 2</a> |
-        <a href="./categoria3.html">Categoría 3</a> |
-        <a href="./categoria4.html">Categoría 4</a> |
-    </nav>
-    <div>
-        <h3>Categoría 1</h3>
-    </div>
+<body class="category-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Cintia F">CINTIA F</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="./index.html">Home</a> |
+                <a href="./registro.html">Página de registro</a> |
+                <a href="./categoria1.html">Eventos</a> |
+                <a href="./categoria2.html">Servicios</a> |
+                <a href="./categoria3.html">Tienda</a> |
+                <a href="./categoria4.html">Contacto</a> |
+            </nav>
+        </div>
+    </header>
+
+    <main class="container category-shell">
+        <section class="category-hero">
+            <p class="eyebrow">Eventos</p>
+            <h1>Eventos</h1>
+            <p>Momentos, lanzamientos y experiencias que me marcaron y me inspiraron.</p>
+        </section>
+
+        <section class="category-grid category-grid--three">
+            <article class="mini-card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80"
+                    alt="Fashion Week Buenos Aires">
+                <div class="card-body">
+                    <span class="date">12 ABR 2025</span>
+                    <h3>Fashion Week Buenos Aires</h3>
+                    <p>Un recorrido por las tendencias, los looks y las personas que hicieron magia en el evento.</p>
+                </div>
+            </article>
+
+            <article class="mini-card">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80"
+                    alt="Panel de moda sostenible">
+                <div class="card-body">
+                    <span class="date">28 MAR 2025</span>
+                    <h3>Panel de moda sostenible</h3>
+                    <p>Un espacio de conversación sobre el futuro de la moda y el impacto real que podemos generar.</p>
+                </div>
+            </article>
+
+            <article class="mini-card">
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+                    alt="Lanzamiento de colección">
+                <div class="card-body">
+                    <span class="date">15 FEB 2025</span>
+                    <h3>Lanzamiento de colección</h3>
+                    <p>Una noche increible, con estilo, creatividad y mucha buena energía.</p>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
